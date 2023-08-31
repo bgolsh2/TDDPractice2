@@ -1,13 +1,25 @@
-module.exports.reverseString = reverseString;
 
 function reverseString(string) {
-  let arr = [];
-  let char = string.split("");
-  for (let i = char.length - 1; i >= 0; i--) {
-    let ele = char[i];
-    arr.push(ele);
+  let newStr = '';
+
+  for (let i = string.length - 1; i >= 0; i--) {
+    let char = string[i];
+    newStr += char;
+
   }
-  return arr.join("");
+  return newStr;
 }
 
+
 console.log(reverseString("hello"));
+
+
+
+
+
+// __________________________________________________________________________________
+// DO NOT EDIT BELOW THS LINE
+// __________________________________________________________________________________
+
+
+module.exports = { reverseString };

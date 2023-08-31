@@ -1,12 +1,11 @@
-const { reverseString } = require("../problems/reverse-string");
 const chai = require("chai");
 const expect = chai.expect;
 
-describe("reverseString(string)", () => {
-  let fun;
-  it("should reverse input string", () => {
-    const string1 = "fun";
-    expect(fun).to.equal("nuf");
+const { reverseString } = require("../problems/reverse-string");
+
+describe("reverseString()", function () {
+  it("should reverse input string word", function () {
+    expect(reverseString("fun")).to.be.equal("nuf");
   });
 });
 
